@@ -8,6 +8,13 @@ body{
     font-family: $ff-default;
     font-size: $fs-default;
     font-weight: $fw-regular;
+    // display: grid;
+    // min-height: 100vh;
+    // place-items: center;
+    // position: relative;
+}
+
+main{
     display: grid;
     min-height: 100vh;
     place-items: center;
@@ -30,7 +37,7 @@ p{
 .card{
     position: absolute;
     margin: 1.5rem;
-    max-width: 24rem;
+    max-width: 28rem;
     overflow: hidden;
 
     &__title{
