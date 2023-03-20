@@ -149,9 +149,12 @@ p {
 
 .card {
   position: absolute;
-  margin: 1.5rem;
+  margin: 1rem;
   max-width: 28rem;
   overflow: hidden; }
+  @media (max-width: 375px) {
+    .card__details {
+      padding: 24px; } }
   .card__title {
     font-size: 1.6rem;
     font-weight: 900; }
@@ -161,8 +164,9 @@ p {
 
 .footer {
   position: absolute;
-  z-index: -1;
+  left: 50%;
   bottom: 1rem;
+  transform: translateX(-50%);
   font-size: .6rem; }
   .footer__link {
     text-decoration: none;
