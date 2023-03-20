@@ -18,3 +18,150 @@ img, svg {
 
 p, h1, h2 {
   overflow-wrap: break-word; }
+
+.text-align-start {
+  text-align: start; }
+
+.text-align-center {
+  text-align: center; }
+
+.text-align-end {
+  text-align: end; }
+
+.text-neutral-900 {
+  color: #1f2f56; }
+
+.text-neutral-400 {
+  color: #7280a7; }
+
+.text-neutral-200 {
+  color: #f5f7ff; }
+
+.fw-regular {
+  font-weight: 500; }
+
+.fw-bold {
+  font-weight: 700; }
+
+.fw-extrabold {
+  font-weight: 900; }
+
+.fs-24 {
+  font-size: 1.5rem; }
+
+.fs-16 {
+  font-size: 1rem; }
+
+.bg-accent-1 {
+  background: #e0e8ff; }
+
+.bg-accent-2 {
+  background: #3829e0; }
+
+.bg-neutral-200 {
+  background: #f5f7ff; }
+
+.br-large {
+  border-radius: 1.5rem; }
+
+.br-small {
+  border-radius: 1rem; }
+
+.grid-column {
+  display: grid;
+  gap: 1rem; }
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem; }
+
+.push-right {
+  margin-left: auto; }
+
+.push-left {
+  margin-right: auto; }
+
+.padding-16 {
+  padding: 1rem; }
+
+.padding-24 {
+  padding: 1.5rem; }
+
+.padding-32 {
+  padding: 2rem; }
+
+.padding-48 {
+  padding: 3rem; }
+
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  font-weight: 700;
+  border: none; }
+  .btn--primary {
+    background: #3829e0;
+    color: #f5f7ff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem rgba(56, 41, 224, 0.3); }
+    .btn--primary:is(:hover, :focus) {
+      background: rgba(56, 41, 224, 0.75); }
+  .btn--secondary {
+    color: rgba(31, 47, 86, 0.5);
+    margin-top: 1rem;
+    margin-inline: auto;
+    padding: 0; }
+    .btn--secondary:is(:hover, :focus) {
+      color: #1f2f56; }
+  .btn--link {
+    color: #3829e0;
+    text-decoration: underline; }
+    .btn--link:is(:hover, :focus) {
+      text-decoration: none;
+      color: rgba(56, 41, 224, 0.6); }
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  position: relative; }
+
+p {
+  color: #7280a7; }
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50vh;
+  z-index: -10; }
+
+.card {
+  position: absolute;
+  margin: 1.5rem;
+  max-width: 24rem;
+  overflow: hidden; }
+  .card__title {
+    font-size: 1.6rem;
+    font-weight: 900; }
+  .card__plan {
+    border-radius: 10px;
+    background: rgba(224, 232, 255, 0.25); }
+
+.footer {
+  position: absolute;
+  z-index: -1;
+  bottom: 1rem;
+  font-size: .6rem; }
+  .footer__link {
+    text-decoration: none;
+    color: #3829e0;
+    transition: all .2s; }
+    .footer__link:hover {
+      text-decoration: underline; }

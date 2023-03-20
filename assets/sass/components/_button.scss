@@ -1,0 +1,40 @@
+.btn{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    font-weight: $fw-bold;
+    border: none;
+
+    &--primary{
+        background: $clr-accent-2;
+        color: $clr-neutral-200;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 1rem 2rem rgba($clr-accent-2, .3);
+
+        &:is(:hover, :focus){
+            background: rgba($clr-accent-2, .75);
+        }
+    }
+
+    &--secondary{
+        color: rgba($clr-neutral-900, .5);
+        margin-top: 1rem;
+        margin-inline: auto;
+        padding: 0;
+
+        &:is(:hover, :focus){
+            color: $clr-neutral-900
+        }
+    }
+
+    &--link{
+        color: $clr-accent-2;
+        text-decoration: underline;
+
+        &:is(:hover, :focus){
+            text-decoration: none;
+            color: rgba($clr-accent-2, .6);
+        }
+    }
+}

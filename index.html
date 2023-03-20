@@ -2,36 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
   
-  <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Order Summary Card</title>
 </head>
-<body>
+<body class="bg-accent-1">
 
-  Order Summary
+    <picture>
+      <source class="bg__pattern" srcset="./assets/img/pattern-background-desktop.svg" media="(min-width: 600px)">
+      <img class="bg-pattern" src="./assets/img/pattern-background-mobile.svg" alt="">
+    </picture>
+    <div class="card bg-neutral-200 br-large">
+      <img class="card__img" src="./assets/img/illustration-hero.svg" alt="">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <div class="card__details padding-32 text-align-center grid-column">
+        <h1 class="card__title">Order Summary</h1>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-  Annual Plan
-  $59.99/year
+        <div class="card__plan text-align-start flex-row padding-24">
+            <img class="" src="./assets/img/icon-music.svg" alt="">
+            <div>
+              <h2 class="fs-16">Annual Plan</h2>
+              <p>$59.99/year</p>
+            </div>
+            <button class="btn btn--link push-right" href="">Change</button>
+        </div>
+    
+        <button type="submit" href="" class="btn btn--primary">Proceed to Payment</button>
+        <button type="submit" href="" class="btn btn--secondary">Cancel Order</button>
+      </div>
+    </div>
 
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="footer text-align-center">
+    Challenge by <a class="footer__link text-neutral-400" href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub" target="blank">Frontend Mentor</a>. Coded by <a class="footer__link" href="https://github.com/devhnry">devnhry</a>.
+  </footer>
 </body>
 </html>

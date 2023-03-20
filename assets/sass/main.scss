@@ -1,3 +1,64 @@
 @import "./abstract/reset";
 @import "./abstract/variables";
+@import "./base/utilities";
 
+@import "./components/button";
+
+body{
+    font-family: $ff-default;
+    font-size: $fs-default;
+    font-weight: $fw-regular;
+
+
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    position: relative;
+}
+
+p{
+    color: $clr-neutral-400;
+}
+
+.bg-pattern{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    z-index: -10;
+}
+
+.card{
+    position: absolute;
+    margin: 1.5rem;
+    max-width: 24rem;
+    overflow: hidden;
+
+    &__title{
+        font-size: 1.6rem;
+        font-weight: $fw-extrabold;
+    }
+
+    &__plan{
+        border-radius: 10px;
+        background: rgba(hsl(225, 100%, 94%) , .25)
+    }
+}
+
+.footer{
+    position: absolute;
+    z-index: -1;
+    bottom: 1rem;
+    font-size: .6rem;
+
+    &__link{
+        text-decoration: none;
+        color: $clr-accent-2;
+        transition: all .2s;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
